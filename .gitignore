@@ -1,0 +1,17 @@
+# Build results
+Debug/
+Release/
+x64/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio files
+.vs/
+*.vcxproj.filters
+ipch/
+*.ilk
+*.pdb
+*.exe
+*.obj
