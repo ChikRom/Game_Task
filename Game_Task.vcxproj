@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;src/effects</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;src/effects</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -104,6 +106,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;src/effects</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,6 +121,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;src/effects</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,7 +131,42 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Game_Task.cpp" />
+    <ClCompile Include="src\BattleSystem.cpp" />
+    <ClCompile Include="src\Character.cpp" />
+    <ClCompile Include="src\effects\DragonEffect.cpp" />
+    <ClCompile Include="src\Input_Output_System.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Monster.cpp" />
+    <ClCompile Include="src\effects\ImpulseActionEffect.cpp" />
+    <ClCompile Include="src\effects\PoisonEffect.cpp" />
+    <ClCompile Include="src\effects\RageEffect.cpp" />
+    <ClCompile Include="src\effects\ShieldEffect.cpp" />
+    <ClCompile Include="src\effects\SkeletonEffect.cpp" />
+    <ClCompile Include="src\effects\SlimeEffect.cpp" />
+    <ClCompile Include="src\effects\StealthAttackEffect.cpp" />
+    <ClCompile Include="src\effects\StoneSkinEffect.cpp" />
+    <ClCompile Include="src\GameApplication.cpp" />
+    <ClCompile Include="src\WeaponDatabase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BattleSystem.h" />
+    <ClInclude Include="src\Character.h" />
+    <ClInclude Include="src\effects\DragonEffect.h" />
+    <ClInclude Include="src\effects\Effect.h" />
+    <ClInclude Include="src\GameApplication.h" />
+    <ClInclude Include="src\Input_Output_System.h" />
+    <ClInclude Include="src\Monster.h" />
+    <ClInclude Include="src\effects\ImpulseActionEffect.h" />
+    <ClInclude Include="src\effects\PoisonEffect.h" />
+    <ClInclude Include="src\effects\RageEffect.h" />
+    <ClInclude Include="src\effects\ShieldEffect.h" />
+    <ClInclude Include="src\effects\SkeletonEffect.h" />
+    <ClInclude Include="src\effects\SlimeEffect.h" />
+    <ClInclude Include="src\effects\StealthAttackEffect.h" />
+    <ClInclude Include="src\effects\StoneSkinEffect.h" />
+    <ClInclude Include="src\Types.h" />
+    <ClInclude Include="src\Weapon.h" />
+    <ClInclude Include="src\WeaponDatabase.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
